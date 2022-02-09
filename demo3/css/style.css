@@ -403,7 +403,8 @@ button {
 }
 
 .text-img figure img {
-     width: 100%;
+     width: 500px;
+     height: 500px;
 }
 
 .text-img figure {position: relative;}
@@ -479,7 +480,8 @@ font-size: 21px;
 }
 
 .about .about_box figure img {
-     width: 100%;
+     width: 200px;
+     height: 200px;
 }
 
 .about .about_box .read_more {
