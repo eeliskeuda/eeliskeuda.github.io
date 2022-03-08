@@ -4,7 +4,9 @@ function onkoKirjautunut() {
     if (localStorage.getItem("kirjautunut") === "kylla") {
         document.getElementById("tervetuloa_teksti").textContent += localStorage.getItem("nimi");
         document.getElementById("kirjautumis_lomake").style.display = "none";
-        document.getElementById("kirjaudu_ulos_nappi").style.display = "";
+        
+    } else {
+        document.getElementById("kirjaudu_ulos_nappi").style.display = "none"
     }
 }
 
