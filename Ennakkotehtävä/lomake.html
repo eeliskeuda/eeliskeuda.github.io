@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <!--CSS tiedosto-->
+        <link rel="stylesheet" href="lomake.css">
+    </head>
+    <body>
+            <!--Otsiko ja kuvaus-->
+            <h1 id="otsikko">Kyselylomake</h1>
+            <p id="kuvaus">Täytä alla oleva lomake ja paina lähetä.</p>
+            <!--Kyselylomake-->
+            <form id="kyselylomake" action="">
+                <!--Nimi vastauskenttä-->
+                <label for="nimi">Nimi</label><br>
+                <input type="text" name="nimi" id="nimi" placeholder="Väh. 3 merkkiä" minlength="3" required><br><br>
+                <!--Sähköposti vastauskenttä-->
+                <label for="email">Sähköposti</label><br>
+                <input type="email" name="email" id="email" placeholder="esimerkki@email.com" required><br><br>
+                <!--Ikä vastauskenttä-->
+                <label for="ika">Ikä</label><br>
+                <input type="number" name="ika" id="ika" placeholder="0-99" min="0" max="99" required><br><br>
+                <!--Pudotusvalikko-->
+                <label for="pudotus">Sukupuoli</label><br>
+                <select name="pudotus" id="pudotus">
+                    <option value="mies">Mies</option>
+                    <option value="nainen">Nainen</option>
+                    <option value="muu">Muu</option>
+                </select><br><br>
+                <!--Radionäppäimet-->
+                <fieldset>
+                    <legend>Asuinalue</legend>
+                    <label for="tuusula">Tuusula</label>
+                    <input type="radio" name="asuinalue" id="tuusula" value="tuusula" required>
+                    <label for="kerava">Kerava</label>
+                    <input type="radio" name="asuinalue" id="kerava" value="kerava">
+                    <label for="jarvenpaa">Järvenpää</label>
+                    <input type="radio" name="asuinalue" id="jarvenpaa" value="jarvenpaa">
+                </fieldset><br>
+                <!--Valintaruudut-->
+                <fieldset>
+                    <legend>Lempi ohjelmointikieli</legend>
+                    <label for="HTML">HTML</label>
+                    <input type="checkbox" name="ohjelmointikieli" id="HTML" value="html">
+                    <label for="CSS">CSS</label>
+                    <input type="checkbox" name="ohjelmointikieli" id="CSS" value="css">
+                    <label for="JavaScript">JavaScript</label>
+                    <input type="checkbox" name="ohjelmointikieli" id="JavaScript" value="javascript">
+                </fieldset><br>
+                <!--Tekstikenttä lisäkommenteille-->
+                <label for="lisakommentit">Lisäkommentit</label><br>
+                <textarea name="lisakommentit" id="lisakommentit" cols="30" rows="10" placeholder="Kirjoita jotain..."></textarea><br>
+                <!--Lähetysnappi-->
+                <input type="submit" name="laheta" id="laheta">
+            </form>
+    </body>
+</html>
